@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/burger.css" />
   <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/infographic.css">
   <link rel="icon" type="image/png" href="img/fav.png" />
   <title>Emergency Site</title>
 </head>
@@ -20,11 +21,12 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> Alien Invasion! </a>
+        <a href="index.html"> E.T. EMERGENCY </a>
       </div>
       <ul class="menu">
         <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
         <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><button id="toggle">light</button></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
@@ -35,86 +37,148 @@
   </header>
   <section id="main-disclamer">
     <div id="main-disclamer-content">
-      <img src="" alt="ICON" />
-      <div>
-        <h1>Aliens spottet</h1>
-        <p class="sub">Måske er vi ikke alene?</p>
+      <img class="logo" src="img/ET-Emergency.svg" alt="logo">
+      <div class="main-disclamer-div">
+        <h1>VI TAGER DINE INTERGALAKTISKE OPLEVELSER ALVORLIGT</h1>
       </div>
-    </div>
   </section>
   <main>
     <section id="daily">
       <article class="daily_card">
-        <img src="img/ChatGPT Image 31. okt. 2025, 11.37.20.png" alt="teaser_img" />
+        <img src="img/Form.webp" alt="teaser_img" />
         <div class="daily_text">
-          <h2>Er du lige blevet beemet op af en UFO?</h2>
+          <h2>Udfyld vores E.T. EMERGENCY rapport</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            magnam ducimus ea, sed minima asperiores.
+            Har du oplevet noget, der ikke helt gav mening?
+
+            Måske et mystisk lys, en mærkelig lyd, en genstand på himlen – eller noget, du slet ikke kan forklare?
+            Uanset hvad du har set, vil vi gerne høre om det.
+
+            Udfyld vores officielle ET Emergency-rapport, så kan vores efterforskere analysere din oplevelse og give dig
+            en
+            forklaring… eller i det mindste det tætteste, vi kan komme på én.
+
+            Din observation kan være vigtigere, end du tror.
           </p>
-          <a href="" class="cta_btn">Se mere</a>
+          <a class="cta_btn" href="register.html">Indberet 👽</a>
         </div>
       </article>
       <article class="daily_card">
-        <img src="img/ufo1.jpg" alt="teaser_img" />
+        <img src="img/forsideNabo.webp" alt="forsideNabo" />
         <div class="daily_text">
-          <h2>Har du lige set din nabo blive beemet op af en UFO?</h2>
+          <h2>Hvad gør du, hvis du ser din nabo blive beemet op?
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            magnam ducimus ea, sed minima asperiores.
+            Det starter som en mærkelig lyd. Så et skarpt lys. Og før du når at blinke, svæver din nabo allerede halvt
+            oppe i himlen
+            som en forvirret helium-balloon. Panik? Ja. Handlingslammet? Måske. Men du har faktisk flere muligheder, end
+            du tror.
+
+            Hvis du en dag skulle stå i præcis den situation, så fortvivl ikke — der findes måder at håndtere det på.
+
+            👉 Klik videre og læs vores bedste råd og huskeregler, hvis du selv skulle ende ombord på et intergalaktisk
+            rumskib…
           </p>
-          <a href="" class="cta_btn">Se mere</a>
+          <a class="cta_btn" href="instruction.html">Klik her 🛸</a>
         </div>
       </article>
     </section>
     <section id="breaking">
       <article class="news_card">
-        <h3>Lokal påstår at have set sin nabo blive bortført af Aliens</h3>
-        <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-        <img src="UFO/" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
+        <img src="img/Landmand -Ufo.webp" alt="news_img" />
+        <div popover id="popover1">
+          <h3>Landmand i Jylland: "Jeg vågnede i en korncirkel"</h3>
+          <p>En landmand fra Midtjylland fik sig noget af et chok, da han tidligt søndag morgen vågnede midt i sin
+            egen hvedemark —
+            omgivet af en perfekt cirkel i det ellers lige korn.
+
+            “Jeg aner ikke, hvordan jeg er havnet der,” fortæller han. “Sidste jeg husker, var at jeg gik ud for at
+            tjekke en
+            mærkelig lyd udenfor. Da jeg slog øjnene op, lå jeg fladt på ryggen, og kornet omkring mig var trykket ned
+            i et mønster,
+            jeg aldrig har set før.”
+
+            Ifølge ET Emergency’s foreløbige rapport viser området tegn på svag radioaktivitet og magnetisk
+            forstyrrelse. Flere
+            naboer har desuden rapporteret at have set et grønt lys over marken omkring kl. 03:00.
+
+            “Min telefon var helt død, og min traktor startede ikke. Jeg tror ikke længere, det bare var en drøm,”
+            siger landmanden,
+            der nu sover med lommelygte og kamera ved sengen.
+
+            Eksperter fra ET Emergency er på stedet for at analysere jorden og kortlægge mønstret. Ifølge dem kan
+            korncirklen være
+            en klassisk landingsplads for mindre fartøjer, eller – i sjældnere tilfælde – et tegn på at noget er
+            blevet afleveret
+            tilbage.
+
+            Har du oplevet noget lignende?</p>
+          <img src="img/landmandsover.webp" alt="landmand">
+          <button popovertarget="popover1">LUK</button>
+        </div>
+        <button popovertarget="popover1" class="cta_btn" id="cta_open1">Læs mere</button>
       </article>
+
       <article class="news_card">
-        <h3>Alien set i lille landsby</h3>
-        <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-        <img src="" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
+        <img src="img/bartender1.webp" alt="bartender" />
+        <div popover id="popover2">
+          <h3>Bartender bortført midt i fyraftensøl – kom tilbage med nyt ølkoncept</h3>
+          <p>Det startede som en helt normal fyraftensøl, da bartenderen Mads pludselig blev fanget i et grønt lys midt
+            bag baren og
+            løftet direkte op mod loftet – stadig med sit ølglas i hånden. Sekunder senere var både han og UFO’en
+            forsvundet.
+
+            Tre timer efter dukkede Mads op igen samme sted, svagt lugtende af stjernestøv og med et blik som én, der
+            havde set
+            universets sandhed… og smagt dens øl.
+
+            Ifølge Mads blev han bortført af rumvæsner, der viste sig at være passionerede ølbryggere. De introducerede
+            ham for
+            “hyperhumle”, nul-tyngdekrafts-gæring og opskrifter, der ifølge ham selv er “lysår foran menneskeheden”.
+
+            Nu lancerer han et helt nyt koncept, Galaxy Brews, inspireret af hans intergalaktiske smagsrejse.
+
+            “Hvis øllen begynder at lyse grønt,” siger Mads, “så tag små slurke. Bare for en sikkerheds skyld.”</p>
+          <img src="img/bartender2.webp" alt="bartender2">
+          <button popovertarget="popover2">LUK</button>
+        </div>
+        <button popovertarget="popover2" class="cta_btn" id="cta_open1">Læs mere</button>
       </article>
+
       <article class="news_card">
-        <h3>Nyhed</h3>
-        <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-        <img src="" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
+        <img src="img/hund - ufo.webp" alt="hund" />
+        <div popover id="popover3">
+          <h3>Vidne: Jeg så min hund blive løftet op i et grønt lys</h3>
+          <p>Det var en helt almindelig aftengåtur, da Brian pludselig stoppede midt på stien. “Fido?” kaldte han, da
+            hunden begyndte
+            at gø op mod himlen. Før han nåede at reagere, åbnede et kraftigt, grønt lys sig over dem – og til Brians
+            chok begyndte
+            Fido langsomt at svæve opad, som om tyngdekraften bare havde besluttet at tage fri.
+
+            “Jeg stod bare og gloede! Jeg troede først, at jeg havde fået solstik… om aftenen,” fortæller Brian. Ifølge
+            ham løftede
+            UFO’en Fido et godt stykke over trætoppene, inden lyset pludselig slukkede, og hunden dalede stille ned på
+            jorden igen –
+            logrende, som om det hele havde været en sjov leg.
+
+            Siden hændelsen har Fido udvist særlige tegn: Han stikker snuden mod himlen oftere end normalt, nægter at
+            spise sin
+            gamle hundemad og reagerer kraftigt på grønne lommelygter.
+
+            Brian er ikke i tvivl: “De tog ham op… men jeg aner stadig ikke hvorfor. Måske ville de bare hilse på.”</p>
+          <img src="img/hund2.webp" alt="hund2">
+          <button popovertarget="popover3">LUK</button>
+        </div>
+        <button popovertarget="popover3" class="cta_btn" id="cta_open1">Læs mere</button>
       </article>
+
     </section>
   </main>
 
   <footer>
-    <nav class="some">
-      <ul>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-    </nav>
-    <nav class="another">
-      <ul>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-    </nav>
-    <nav class="yetanother">
-      <ul>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-    </nav>
   </footer>
+  <script src="js/darkmode.js"></script>
+  <script src="js/dialog.js"></script>
   <script src="js/burger.js"></script>
   <!-- <script src="js/main.js"></script> -->
 </body>

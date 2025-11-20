@@ -6,8 +6,8 @@
 ::before,
 ::after {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  /*margin: 0;*/
 }
 
 html {
@@ -35,14 +35,16 @@ svg {
 
 label {
   display: block;
+  margin-bottom: -1rem;
 }
 
 input,
 button,
 textarea,
 select {
+  border-color: aliceblue;
   font: inherit;
-  color: inherit;
+  color: white;
   background-color: transparent;
   font-size: max(1em, 16px);
   padding: 0;
@@ -75,4 +77,8 @@ select,
   overflow: hidden;
   white-space: nowrap;
   clip-path: inset(100%);
+}
+
+::placeholder {
+  color: white;
 }
