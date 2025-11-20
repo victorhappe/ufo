@@ -5,6 +5,7 @@ body {
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: var(--color-bg);
 }
 main {
   display: grid;
@@ -12,6 +13,7 @@ main {
 }
 main > *:not(:first-child) {
   margin: 0 1rem;
+  color: var(--color-text);
 }
 main {
   grid-template-rows: min-content min-content 1fr min-content;
@@ -21,8 +23,11 @@ main {
 }
 /* LAYOUT FOR HEADER AND FOOTER */
 footer {
-  display: grid;
-  gap: 10px;
+  width: 100%;
+  border-top: 4px solid #654ef4;
+  margin: 0;
+  padding: 20px 0; /* valgfrit */
+  margin-top: 60px;
 }
 header nav,
 footer nav {
@@ -77,6 +82,7 @@ footer ul {
 
   h1 {
     grid-column: 1 / -1;
+    font-family: "Rubik";
   }
   footer {
     grid-template-columns: 1fr 1fr 1fr;

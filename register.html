@@ -1,81 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html">E.T. EMERGENCY</a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><button id="toggle">light</button></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Har du set et rumvæsen?</h1>
+    <section id="form-section">
+      <article id="form-info">
+        <h2>Udfyld vores E.T. EMERGENCY form:</h2>
+      </article>
+      <form id="webform"></form>
+    </section>
+    <section id="form-summary">
+      <h2></h2>
+      <article>
+        <p class="placeholder"></p>
+      </article>
+    </section>
+
+    <form>
+      <!-- UFO-beskrivelse -->
+      <div style="margin-bottom: 15px;">
+        <label for="report">Beskriv din observation:</label><br>
+        <textarea id="report" name="report" placeholder="Skriv her, hvad du så..."
+          style="width: 100%; height: 100px; font-size: 16px; padding: 10px; box-sizing: border-box; resize: none;"
+          required>
+          </textarea>
+      </div>
+
+      <!-- Fornavn -->
+      <div style="margin-bottom: 10px;">
+        <label for="fname">Fornavn:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Spongebob" required
+          style="width: 100%; padding: 8px; box-sizing: border-box;">
+      </div>
+
+      <!-- Efternavn -->
+      <div style="margin-bottom: 10px;">
+        <label for="lname">Efternavn:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Squarepants" required
+          style="width: 100%; padding: 8px; box-sizing: border-box;">
+      </div>
+
+      <!-- Tidspunkt -->
+      <div style="margin-bottom: 10px;">
+        <label for="datetime">Hvornår så du UFO'en?</label><br>
+        <input type="datetime-local" id="datetime" name="datetime"
+          style="width: 100%; padding: 8px; box-sizing: border-box;">
+      </div>
+
+      <!-- Lokation -->
+      <div style="margin-bottom: 10px;">
+        <label for="location">Hvor befandt du dig?</label><br>
+        <input type="text" id="location" name="location" placeholder="F.eks. København NV"
+          style="width: 100%; padding: 8px; box-sizing: border-box;">
+      </div>
+
+      <!-- Upload billede -->
+      <div style="margin-bottom: 15px;">
+        <label for="photo">Har du et billede?</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*">
+      </div>
+
+      <!-- Send -->
+      <div style="display: flex; gap: 10px;">
+        <input type="submit" value="Indsend observation"
+          style="flex: 2; padding: 8px; background-color: green; border: none; cursor: pointer;">
+      </div>
+    </form>
+
+  </main>
+  <footer>
+  </footer>
+  <script src="js/darkmode.js"></script>
+  <script src="js/burger.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
 </html>
